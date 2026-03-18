@@ -53,18 +53,4 @@ The protocol is designed to maximize time spent in the **ELEVATED** mode. This i
   * **Trigger:** `RATIO_EXTREME = 1.012061e18`
   * **Action:** Extreme price shock. The hook acts as a circuit breaker, fully blocking toxic execution to protect LP capital until volatility normalizes.
 
----
-
-## 🏗️ System Architecture
-
-ARMSys operates with a robust off-chain data pipeline feeding the on-chain execution logic. 
-
-1. [cite_start]**Data Ingestion:** A Python script runs continuously in a virtual terminal (`screen`)[cite: 33]. [cite_start]Every 5 minutes, `main.py` wakes up and fetches the latest 500 ETH candles from Binance via port 443[cite: 34, 35, 36, 37].
-2. [cite_start]**Local Storage:** This continuous stream overwrites `armsys.db`, ensuring a rolling 41-hour historical baseline is always maintained[cite: 38].
-3. [cite_start]**API Layer:** Concurrently, a Uvicorn API server listens on port 8000[cite: 39]. [cite_start]When the frontend or external systems request metrics, it instantly queries the database and serves real-time JSON responses[cite: 39].
-
----
-
-## 🔒 Security & Audits
-
-Security is paramount for institutional liquidity. [cite_start]The current architecture of ARMSys was successfully reviewed by MixBytes[cite: 15]. A comprehensive smart contract audit will be finalized ahead of the seed round and UHI9 Demo Day.
+-
