@@ -45,7 +45,7 @@ The protocol is designed to maximize time spent in the **ELEVATED** mode. This i
   * **Fee:** 0.3% (`3000`)
 
 * 🟡 **ELEVATED Mode:**
-  * **Trigger:** `RATIO_ELEVATED = 1.004764e18`
+  * **Trigger:** `RATIO_ELEVATED = 1.003723e18`
   * **Action:** The protocol dynamically increases the pool fee.
   * **Fee:** 0.6% (`6000`)
 
