@@ -1,4 +1,9 @@
 # 🛡️ ARMSys: Automated Risk Management System
+![Network](https://img.shields.io/badge/Network-Base_Mainnet-blue)
+![Stage](https://img.shields.io/badge/Stage-Alpha-orange)
+![Uniswap](https://img.shields.io/badge/Uniswap-v4_Hooks-pink)
+![Incubator](https://img.shields.io/badge/Cohort-UHI9-success)
+
 
 ARMSys is an oracle-free execution guard for Uniswap v4 designed to protect Liquidity Providers (LPs) from Loss Versus Rebalancing (LVR). [cite_start]Drawing on 15 years of quantitative experience in TradFi (primarily options trading), ARMSys brings proven, classic risk management approaches on-chain.
 
